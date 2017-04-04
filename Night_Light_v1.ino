@@ -26,7 +26,7 @@ void loop()
   
 }
 
-void threeMinutesOn
+void threeMinutesOn //Use millis() here i.s.o delay() becuase I want the night to keep listening for sound and restart the loop on new sound.
 {
   unsigned long currentTimer = millis();
   if (currentTimer < 180000)
@@ -35,7 +35,7 @@ void threeMinutesOn
   }
   else
   {
-    ledStripOff();
+    digital
   }
 }
 
