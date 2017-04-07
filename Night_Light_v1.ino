@@ -29,13 +29,13 @@ void loop()
 void threeMinutesOn //Use millis() here i.s.o delay() becuase I want the night to keep listening for sound and restart the loop on new sound.
 {
   unsigned long currentTimer = millis();
-  if (currentTimer < 180000)
+  if (currentTimer <= currentTimer + 180000) //in an earlier version it was simply if (currentTimer < 180000) which only works if you want to run the function at the start/boot of the machine. 
   {
     ledStripOn();
   }
   else
   {
-    digital
+    ledStripOff();
   }
 }
 
