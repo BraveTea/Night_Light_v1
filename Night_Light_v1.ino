@@ -18,7 +18,7 @@ void setup()
   pinMode(LED_STRIP, OUTPUT);
   pinMode(POT_METER_PIN, INPUT);
   pinMode(LRD_PIN, INPUT);
-  pinMode(SOUND_PIN, INTPUT);
+  pinMode(SOUND_PIN, INPUT);
 }
 
 void loop()
